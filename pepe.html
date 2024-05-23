@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LOGO FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-..." crossorigin="anonymous">
+    <!-- seo -->
+    <meta name="descripcion" content="Sitio web del Buffet Stentor">
+    <meta name="keywords" content="buffet, club de barrio, catering, comida casera, empanadas, milanesas, eventos deportivos, futsal, Pedidos Ya, reserva online, capital federal, ambiente familiar, Villa Luro.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="./pepe.css">
+    <title>Buffet Stentort</title>
+</head>
+<body>
+    <div class="inicio" id="inicio">
+      <div class="fixed-top">
+        <nav class="navbar navbar-expand-lg fondo-del-nav p-0">
+          <div class="container-fluid">
+              <a href="#inicio" rel="noopener noreferrer"><img src="img/1_preview_rev_1 - copia.png" alt="BuffetStentorLetras"/></a>
+            <div class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger__container">
+                  <div class="hamburger__inner">
+                    <!-- Utiliza el ícono de hamburguesa o cruz según el estado del menú -->
+                    <i class="fas fa-bars logo-navbar"></i>
+                    <i class="fas fa-times logo-navbar"></i>
+                  </div>
+                  <div class="hamburger__hidden"></div>
+                </div>
+              </div>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+              <ul class="navbar-nav ">
+                <!-- <li class="nav-item">
+                  <a class="nav-link diseño-texto-navbar" href="#inicio" rel="noopener noreferrer">
+                    INICIO
+                  </a>
+                </li> -->
+                <li class="nav-item">
+                  <a class="nav-link diseño-texto-navbar" href="#pedidosYa" rel="noopener noreferrer">
+                    PEDIDOS YA
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link diseño-texto-navbar" href="#MenuYhorarios" rel="noopener noreferrer">
+                    MENU Y PRECIOS
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link diseño-texto-navbar" href="#promociones" rel="noopener noreferrer">
+                    PROMOCIONES
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link diseño-texto-navbar" href="#eventos" rel="noopener noreferrer">
+                    EVENTOS
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link diseño-texto-navbar" href="#Galeria" rel="noopener noreferrer">
+                    GALERIA
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link diseño-texto-navbar" href="#ubicacion" rel="noopener noreferrer">
+                    UBICACION
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div id="carouselExampleControls" class="carousel slide fondo-principal" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-caption">
+              <p class="bienvenida">Bienvenidos</p>
+              <h2 class="BuffetStentor">BUFFET STENTOR</h2>
+            </div>
+            <img src="img/puerta-de-stentor - copia - copia.jpeg" class="d-block w-100" alt="..." />
+          </div>
+          <!-- Otras imágenes del carrusel aquí -->
+        </div>
+      </div>
+    </div>
+  
+
+
+<!-- ***************** -->
+<!-- CARTEL PEDIDOS YA -->
+<!-- ***************** -->
+    <div id="pedidosYa" class='fondo-delivery-de-py'>
+        <a href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/la-cantina-de-stentor-c09912e6-97d3-4c85-b950-17bc1c730bda-menu?search=STENTOR" target="_blank" rel="noopener noreferrer"> <img src="img/Cartel-pedidos-ya.jpg" alt="Descripción" /></a>
+      </div>
+
+
+
+<!-- ******************* -->
+<!-- HORARIO DE ATENCION -->
+<!-- ******************* -->
+<div>
+    <div id="nuestrosHorarios" class="horarios-container">
+  <div class=" text-center">
+    <h1>HORARIOS DE ATENCION</h1>
+  </div>
+  <div class="horarios-info">
+    <div class="horario-item">
+      <h2>BUFFET</h2>
+      <p>
+        <strong>Lunes a Domingo:</strong> 10:00 AM - 12:00 PM
+      </p>
+    </div>
+    <div class="horario-item">
+      <h2>PEDIDOS YA</h2>
+      <p class="text-center">10:00 AM - 12:00 PM</p>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+<!-- ************ -->
+<!-- MENU Y CARTA -->
+<!-- ************ -->
+<div id="MenuYhorarios" class='menu'>
+    <div class='logos-menu text-center'>
+      <button onclick="handleMenuItemClick('Pizzas')" class="menu-button selected" data-menu="Pizzas">
+        <i class="fas fa-pizza-slice iconos"></i>
+        <div class="menu-horario iconos">PIZZAS</div>
+      </button>
+      <button onclick="handleMenuItemClick('Hamburguesas')" class="menu-button" data-menu="Hamburguesas">
+        <i class="fas fa-hamburger iconos"></i>
+        <div class="menu-horario iconos">HAMBURGUESAS</div>
+      </button>
+      <button onclick="handleMenuItemClick('Milanesas')" class="menu-button" data-menu="Milanesas">
+        <i class="fa-solid fa-bacon"></i>
+        <div class="menu-horario iconos">MILANESAS</div>
+      </button>
+      <button onclick="handleMenuItemClick('Empanadas')" class="menu-button" data-menu="Empanadas">
+        <i class="fa-solid fa-cloud"></i>
+        <div class="menu-horario iconos">EMPANADAS</div>
+      </button>
+      <button onclick="handleMenuItemClick('Medialunas')" class="menu-button" data-menu="Medialunas">
+        <i class="fas fa-coins iconos"></i>
+        <div class="menu-horario iconos">MEDIALUNAS</div>
+      </button>
+      <button onclick="handleMenuItemClick('Panchos')" class="menu-button" data-menu="Panchos">
+        <i class="fa-solid fa-hotdog iconos"></i>
+        <div class="menu-horario iconos">PANCHOS</div>
+      </button>
+      <button onclick="handleMenuItemClick('Tostados')" class="menu-button" data-menu="Tostados">
+        <i class="fa-solid fa-bread-slice"></i>
+        
+        <div class="menu-horario iconos">TOSTADOS</div>
+      </button>
+      <button onclick="handleMenuItemClick('Bebidas')" class="menu-button" data-menu="Bebidas">
+        <i class="fas fa-wine-bottle iconos"></i>
+        <div class="menu-horario iconos">BEBIDAS</div>
+      </button>
+    </div>
+
+
+
+<!-- ***** -->
+<!-- CARTA -->
+<!-- ***** -->
+    <div>
+      <div id="content">
+        <!-- Contenido dinámico -->
+        <div id="Pizzas" class="content-item">
+          <div class="fondoDeLosPrecios">
+            <div class="menu-container ">
+  <div class="menu-item pizzaMusarela">
+    <div class="card__preview">
+              <img src="img/pizza-muzzarella - copia.jpeg" alt="Lakeview Elegance preview">
+              <div class="card__price">
+                <button class="card__btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                      stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                  </svg>
+              </button>
+              </div>
+          </div>
+    <div >
+      <h3>Pizza Muzza</h3>
+      <p class='condimentos'>Queso, orégano, aceitunas, provenzal<strong class=' text-white'>----------</strong><!-- <strong class=' text-white'>Provenzal</strong> --></p>
+      <p class="price">$3.600</p>
+      <a href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/la-cantina-de-stentor-c09912e6-97d3-4c85-b950-17bc1c730bda-menu?search=STENTOR" target="_blank" rel="noopener noreferrer"><button class='boton-verEnPedidosYa'>Ver en Pedidos Ya</button></a>
+    </div>
+  </div>
+  <div class="menu-item pizzaJamon">
+    <div class="card__preview">
+              <img src="img/pizza-jamon - copia.jpeg" alt="Lakeview Elegance preview">
+              <div class="card__price">
+                <button class="card__btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                      stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                  </svg>
+              </button>
+              </div>
+          </div>
+    <div>
+      <h3>Pizza Jamon</h3>
+      <p class='condimentos'>Queso, aceitunas, jamon, orégano, provenzal</p>
+      <p class="price">$3.600</p>
+      <a href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/la-cantina-de-stentor-c09912e6-97d3-4c85-b950-17bc1c730bda-menu?search=STENTOR" target="_blank" rel="noopener noreferrer"><button class='boton-verEnPedidosYa'>Ver en Pedidos Ya</button></a>
+    </div>
+  </div>    
+              <div class='menu-item pizzaNapolitana'>
+                <div class="card__preview">
+                  <img src="img/pizza-jamon - copia.jpeg" alt="Lakeview Elegance preview">
+                  <div class="card__price">
+                    <button class="card__btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                          stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                          stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                      </svg>
+                  </button>
+                  </div>
+              </div>
+                <div>
+                  <h3>Pizza Napo</h3>
+                  <p class='condimentos'>Queso, tomate, orégano, aceitunas, provenzal</p>
+                  <p class="price">$4.400</p>
+                  
+                  <a href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/la-cantina-de-stentor-c09912e6-97d3-4c85-b950-17bc1c730bda-menu?search=STENTOR" target="_blank" rel="noopener noreferrer"><button class='boton-verEnPedidosYa'>Ver en Pedidos Ya</button></a>
+                </div>
+              </div>        
+              <div class='menu-item pizzaHuevo'>
+                <div class="card__preview">
+                  <img src="img/pizza-huevo.webp" alt="Lakeview Elegance preview">
+                  <div class="card__price">
+                    <button class="card__btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                          stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                          stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                      </svg>
+                  </button>
+                  </div>
+              </div>
+                <div>
+                  <h3>Pizza huevo</h3>
+                  <p class='condimentos'>Queso, huevo, aceitunas, orégano<strong class=' text-white'>----------</strong><!-- <strong class=' text-white'>Provenzal</strong> --></p>
+                  <p class="price">$4.600</p>
+                  <a href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/la-cantina-de-stentor-c09912e6-97d3-4c85-b950-17bc1c730bda-menu?search=STENTOR" target="_blank" rel="noopener noreferrer"><button class='boton-verEnPedidosYa'>Ver en Pedidos Ya</button></a>
+                </div>
+              </div>
+              <div class='menu-item pizzaStentor'>
+                <div class="card__preview">
+                  <img src="img/pizza-stentor - copia.jpeg" alt="Lakeview Elegance preview">
+                  <div class="card__price">
+                    <button class="card__btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                          stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                          stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                      </svg>
+                  </button>
+                  </div>
+              </div>
+                <div>
+                  <h3>Pizza Stentor</h3>
+                  <p class='condimentos'>Queso, huevo frito, papas fritas, orégano, provenzal</p>
+                  <p class="price">$4.600</p>
+                  <a href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/la-cantina-de-stentor-c09912e6-97d3-4c85-b950-17bc1c730bda-menu?search=STENTOR" target="_blank" rel="noopener noreferrer"><button class='boton-verEnPedidosYa'>Ver en Pedidos Ya</button></a>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- ************ -->
+<!-- HAMBURGUESAS -->
+<!-- ************ -->
+        <div id="Hamburguesas" class="content-item">
+            <div class="fondoDeLosPrecios">
+              <div class="menu-container ">
+    <div class="menu-item HamburguesaCompleta">
+      <div class="card__preview">
+                <img src="img/hamburguesa-completa.webp" alt="Lakeview Elegance preview">
+                <div class="card__price">
+                  <button class="card__btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                    </svg>
+                </button>
+                </div>
+            </div>
+      <div >
+        <h3>Hamburguesa sola con papas</h3>
+        <p class='condimentos'>Hamburguesa sola con papas fritas <strong class='text-white'>Provenzal - Provenzal</strong></p>
+        <p class="price">$3.600</p>
+        <a href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/la-cantina-de-stentor-c09912e6-97d3-4c85-b950-17bc1c730bda-menu?search=STENTOR" target="_blank" rel="noopener noreferrer"><button class='boton-verEnPedidosYa'>Ver en Pedidos Ya</button></a>
+      </div>
+    </div>
+    <div class="menu-item HamburguesaCompleta">
+      <div class="card__preview">
+                <img src="img/hamburguesa-huevo - copia.jpeg" alt="Lakeview Elegance preview">
+                <div class="card__price">
+                  <button class="card__btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                    </svg>
+                </button>
+                </div>
+            </div>
+      <div>
+        <h3 className=' align-items-center '>Hamburguesa Completa</h3>
+        <p class='condimentos'>Hamburguesa con papas fritas, lechuga, tomate y huevo </p>
+        <p class="price">$3.600</p>
+        <a href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/la-cantina-de-stentor-c09912e6-97d3-4c85-b950-17bc1c730bda-menu?search=STENTOR" target="_blank" rel="noopener noreferrer"><button class='boton-verEnPedidosYa'>Ver en Pedidos Ya</button></a>
+      </div>
+      </div>    
+    </div>
+  </div>
+  </div>
+<!-- ******** -->
+<!--MILANESAS -->
+<!-- ******** -->
+<div id="Milanesas" class="content-item">
+  <div class="fondoDeLosPrecios">
+    <div class="menu-container ">
+<div class="menu-item Milanesa">
+<div class="card__preview">
+      <img src="img/milanesa-clasica.webp" alt="Milanesa">
+      <div class="card__price">
+        <button class="card__btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+          </svg>
+      </button>
+      </div>
+  </div>
+<div >
+<h3>Milanesa clasica</h3>
+<p class='condimentos'>Milanesa sola con papas fritas<!-- <strong class=' text-white'>Provenzal</strong> --></p>
+<p class="price">$4.000</p>
+<a href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/la-cantina-de-stentor-c09912e6-97d3-4c85-b950-17bc1c730bda-menu?search=STENTOR" target="_blank" rel="noopener noreferrer"><button class='boton-verEnPedidosYa'>Ver en Pedidos Ya</button></a>
+</div>
+</div>
+<div class="menu-item pizzaJamon">
+<div class="card__preview">
+  <img src="img/milanesa-clasica.webp" alt="Milanesa">
+      <div class="card__price">
+        <button class="card__btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+          </svg>
+      </button>
+      </div>
+  </div>
+<div>
+<h3>Milanesa Napolitana</h3>
+<p class='condimentos'>Musarela, jamon, tomate y papas fritas</p>
+<p class="price">$5.600</p>
+<a href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/la-cantina-de-stentor-c09912e6-97d3-4c85-b950-17bc1c730bda-menu?search=STENTOR" target="_blank" rel="noopener noreferrer"><button class='boton-verEnPedidosYa'>Ver en Pedidos Ya</button></a>
+</div>
+</div>    
+<div class="menu-item Milanesa">
+  <div class="card__preview">
+    <img src="img/milanesa-clasica.webp" alt="Milanesa">
+        <div class="card__price">
+          <button class="card__btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+            </svg>
+        </button>
+        </div>
+    </div>
+  <div>
+  <h3>Milanesa a caballo</h3>
+  <p class='condimentos'>Milanesa con huevo frito</p>
+  <p class="price">$4.400</p>
+  <a href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/la-cantina-de-stentor-c09912e6-97d3-4c85-b950-17bc1c730bda-menu?search=STENTOR" target="_blank" rel="noopener noreferrer"><button class='boton-verEnPedidosYa'>Ver en Pedidos Ya</button></a>
+  </div>
+  </div> 
+</div>
+</div>
+</div>
+<!-- ********* -->
+<!-- EMPANADAS -->
+<!-- ********* -->
+<div id="Empanadas" class="content-item">
+  <div class="fondoDeLosPrecios">
+    <div class="menu-container ">
+      <div class="menu-item Empanadas">
+<div class="card__preview">
+      <img src="img/empanadas-de-j-q - copia.jpeg" alt="Empanadas">
+      <div class="card__price">
+        <button class="card__btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+          </svg>
+      </button>
+      </div>
+  </div>
+<div >
+<h3>Empanadas de jamon y queso</h3>
+<!-- <p class='condimentos'>Queso, orégano, aceitunas, provenzal   <strong class=' text-white'>Provenzal</strong> </p> -->
+<p class="price">$1.200</p>
+<a href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/la-cantina-de-stentor-c09912e6-97d3-4c85-b950-17bc1c730bda-menu?search=STENTOR" target="_blank" rel="noopener noreferrer"><button class='boton-verEnPedidosYa'>Ver en Pedidos Ya</button></a>
+</div>
+</div>
+<div class="menu-item Empanadas">
+<div class="card__preview">
+  <img src="img/empanadas-de-carne - copia.jpeg" alt="Empanadas">
+      <div class="card__price">
+        <button class="card__btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+          </svg>
+      </button>
+      </div>
+  </div>
+<div>
+<h3>Empanadas de carne</h3>
+<!-- <p class='condimentos'>Queso, jamon, orégano, aceitunas, provenzal</p> -->
+<p class="price">$1.200</p>
+<a href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/la-cantina-de-stentor-c09912e6-97d3-4c85-b950-17bc1c730bda-menu?search=STENTOR" target="_blank" rel="noopener noreferrer"><button class='boton-verEnPedidosYa'>Ver en Pedidos Ya</button></a>
+</div>
+</div>    
+<div class="menu-item Empanadas">
+  <div class="card__preview">
+    <img src="img/empanadas-de-carne - copia.jpeg" alt="Empanadas">
+        <div class="card__price">
+          <button class="card__btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+            </svg>
+        </button>
+        </div>
+    </div>
+  <div>
+  <h3>Empanadas de pollo</h3>
+  <!-- <p class='condimentos'>Queso, jamon, orégano, aceitunas, provenzal</p> -->
+  <p class="price">$1.200</p>
+  <a href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/la-cantina-de-stentor-c09912e6-97d3-4c85-b950-17bc1c730bda-menu?search=STENTOR" target="_blank" rel="noopener noreferrer"><button class='boton-verEnPedidosYa'>Ver en Pedidos Ya</button></a>
+  </div>
+  </div> 
+</div>
+</div>
+</div>
+<!-- ********** -->
+<!-- MEDIALUNAS -->
+<!-- ********** -->
+<div id="Medialunas" class="content-item">
+  <div class="fondoDeLosPrecios">
+    <div class="menu-container ">
+<div class="menu-item Medialunas">
+<div class="card__preview">
+      <img src="img/medialunas-jamon-queso.jpeg" alt="Medialunas">
+      <div class="card__price">
+        <button class="card__btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+          </svg>
+      </button>
+      </div>
+  </div>
+<div >
+<h3>Medialunas de manteca</h3>
+<!-- <p class='condimentos'>Queso, orégano, aceitunas, provenzal <strong class=' text-white'>Provenzal</strong> </p> -->
+<p class="price">$700</p>
+<a href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/la-cantina-de-stentor-c09912e6-97d3-4c85-b950-17bc1c730bda-menu?search=STENTOR" target="_blank" rel="noopener noreferrer"><button class='boton-verEnPedidosYa'>Ver en Pedidos Ya</button></a>
+</div>
+</div>
+<div class="menu-item Medialunas">
+<div class="card__preview">
+  <img src="img/medialunas-jamon-queso.jpeg" alt="LMedialunas">
+      <div class="card__price">
+        <button class="card__btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+          </svg>
+      </button>
+      </div>
+  </div>
+<div>
+<h3>Medialunas de Jamon y queso</h3>
+<!-- <p class='condimentos'>Queso, jamon, orégano, aceitunas, provenzal</p> -->
+<p class="price">$1.100</p>
+<a href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/la-cantina-de-stentor-c09912e6-97d3-4c85-b950-17bc1c730bda-menu?search=STENTOR" target="_blank" rel="noopener noreferrer"><button class='boton-verEnPedidosYa'>Ver en Pedidos Ya</button></a>
+</div>
+</div>    
+</div>
+</div>
+</div>
+<!-- ******* -->
+<!-- PANCHOS -->
+<!-- ******* -->
+<div id="Panchos" class="content-item">
+  <div class="fondoDeLosPrecios">
+    <div class="menu-container ">
+<div class="menu-item Panchos">
+<div class="card__preview">
+      <img src="img/pancho-clasico.webp" alt="Panchos">
+      <div class="card__price">
+        <button class="card__btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+          </svg>
+      </button>
+      </div>
+  </div>
+<div >
+<h3>Pancho</h3>
+<p class='condimentos'>Aderezo y papas<!-- <strong class=' text-white'>Provenzal</strong> --></p>
+<p class="price">$900</p>
+<a href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/la-cantina-de-stentor-c09912e6-97d3-4c85-b950-17bc1c730bda-menu?search=STENTOR" target="_blank" rel="noopener noreferrer"><button class='boton-verEnPedidosYa'>Ver en Pedidos Ya</button></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ******** -->
+<!-- TOSTADOS -->
+<!-- ******** -->
+<div id="Tostados" class="content-item">
+  <div class="fondoDeLosPrecios">
+    <div class="menu-container ">
+<div class="menu-item Tostadas">
+<div class="card__preview">
+      <img src="img/Tostado-pan-Arabe.webp" alt="Tostados">
+      <div class="card__price">
+        <button class="card__btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+          </svg>
+      </button>
+      </div>
+  </div>
+<div >
+<h3>Tostado Arabe</h3>
+<br>
+<p class='condimentos'>Jamon y queso<!-- <strong class=' text-white'>Provenzal</strong> --></p>
+<br>
+<p class="price">$3.600</p>
+<a href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/la-cantina-de-stentor-c09912e6-97d3-4c85-b950-17bc1c730bda-menu?search=STENTOR" target="_blank" rel="noopener noreferrer"><button class='boton-verEnPedidosYa'>Ver en Pedidos Ya</button></a>
+</div>
+</div>
+<div class="menu-item Tostadas">
+<div class="card__preview">
+  <img src="img/Tostado-pan-Arabe.webp" alt="Tostadas">
+      <div class="card__price">
+        <button class="card__btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+          </svg>
+      </button>
+      </div>
+  </div>
+<div>
+<h3>Tostado Arabe completo</h3>
+<p class='condimentos'>Jamon, queso, tomate, huevos revueltos</p>
+<p class="price">$1.600</p>
+<a href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/la-cantina-de-stentor-c09912e6-97d3-4c85-b950-17bc1c730bda-menu?search=STENTOR" target="_blank" rel="noopener noreferrer"><button class='boton-verEnPedidosYa'>Ver en Pedidos Ya</button></a>
+</div>
+</div>    
+</div>
+</div>
+</div>
+<!-- ******* -->
+<!-- BEBIDAS -->
+<!-- ******* -->
+<div id="Bebidas" class="content-item">
+  <div class="fondoDeLosPrecios">
+    <div class="menu-container ">
+<div class="menu-item Aquarius">
+<div class="card__preview">
+      <img src="img/aquarius.webp" alt="Aquarius">
+      <div class="card__price">
+        <button class="card__btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+          </svg>
+      </button>
+      </div>
+  </div>
+<div >
+<h3>Aquarius de pera</h3>
+<!-- <p class='condimentos'>Queso, orégano, aceitunas, provenzal <strong class=' text-white'>Provenzal</strong> </p> -->
+<p class="price">$700</p>
+<a href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/la-cantina-de-stentor-c09912e6-97d3-4c85-b950-17bc1c730bda-menu?search=STENTOR" target="_blank" rel="noopener noreferrer"><button class='boton-verEnPedidosYa'>Ver en Pedidos Ya</button></a>
+</div>
+</div>
+<div class="menu-item Aquarius">
+<div class="card__preview">
+  <img src="img/aquarius-pomelo.webp" alt="Aquarius">
+      <div class="card__price">
+        <button class="card__btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+          </svg>
+      </button>
+      </div>
+  </div>
+<div>
+<h3>Aquarius de Pomela</h3>
+<!-- <p class='condimentos'>Queso, jamon, orégano, aceitunas, provenzal</p> -->
+<p class="price">$700</p>
+<a href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/la-cantina-de-stentor-c09912e6-97d3-4c85-b950-17bc1c730bda-menu?search=STENTOR" target="_blank" rel="noopener noreferrer"><button class='boton-verEnPedidosYa'>Ver en Pedidos Ya</button></a>
+</div>
+</div>    
+<div class="menu-item Aquarius">
+  <div class="card__preview">
+    <img src="img/aquarius-manzana.webp" alt="Aquarius">
+        <div class="card__price">
+          <button class="card__btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+            </svg>
+        </button>
+        </div>
+    </div>
+  <div>
+  <h3>Aquarius de manzana</h3>
+  <!-- <p class='condimentos'>Queso, jamon, orégano, aceitunas, provenzal</p> -->
+  <p class="price">$700</p>
+  <a href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/la-cantina-de-stentor-c09912e6-97d3-4c85-b950-17bc1c730bda-menu?search=STENTOR" target="_blank" rel="noopener noreferrer"><button class='boton-verEnPedidosYa'>Ver en Pedidos Ya</button></a>
+  </div>
+  </div> 
+  <div class="menu-item pizzaMusarela">
+    <div class="card__preview">
+          <img src="img/frappe.jpeg" alt="Lakeview Elegance preview">
+          <div class="card__price">
+            <button class="card__btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                  stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+              </svg>
+          </button>
+          </div>
+      </div>
+    <div >
+    <h3>Frappe</h3>
+    <p class='condimentos'>Cafe, dulce de leche, hielo, leche y azucar<!-- <strong class=' text-white'>Provenzal</strong> --></p>
+    <p class="price">$3.600</p>
+    <a href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/la-cantina-de-stentor-c09912e6-97d3-4c85-b950-17bc1c730bda-menu?search=STENTOR" target="_blank" rel="noopener noreferrer"><button class='boton-verEnPedidosYa'>Ver en Pedidos Ya</button></a>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<!-- *********** -->
+<!-- PROMOCIONES -->
+<!-- *********** -->
+<div class="promociones " id="promociones">
+  <img class="w-100" src="img/fondo-promociones.png" alt="" />
+  <!-- Contenedor de la promoción -->
+  <div class="promociones-container">
+    <!-- Contador Regresivo -->
+    <div class="contador-regresivo">
+        <!-- <h3>¡Oferta Especial!</h3> -->
+        <p>¡Aprovecha nuestra promoción antes de que termine!</p>
+        <!-- Añade los elementos para mostrar los días, horas, minutos y segundos -->
+        <div class="text-white tiempo-restante">
+          <span class="text-white" >Tiempo restante: </span>
+          <span id="days"></span>d
+        <span id="hours"></span>h
+        <span id="minutes"></span>m
+        <span id="seconds"></span>s
+        </div>
+        <p><a class="boton-whatsapp" href="https://api.whatsapp.com/send?phone=69115723&text=Hola%20sean%20Bienvenidos!" target="_blank" rel="noreferrer">Contactar por WhatsApp</a></p>
+    </div>
+  </div>
+
+
+
+<!-- ******* -->
+<!-- EVENTOS -->
+<!-- ******* -->
+  <div id="eventos" class="imagen-evento">
+    <div class="titulo-evento text-center">
+    <h2>Celebra en Nuestro Buffet</h2>
+<p>¡Haz de tu evento una ocasión inolvidable alquilando nuestro buffet! Ofrecemos un espacio acogedor y un menú exclusivo para cumpleaños, reuniones y celebraciones especiales. ¡Reserva ahora y crea momentos memorables con nosotros!</p>
+      <p><a class="boton-whatsapp " href="https://api.whatsapp.com/send?phone=69115723&text=Hola%20sean%20Bienvenidos!" target="_blank" rel="noreferrer">Contactar por WhatsApp</a></p>
+   </div> 
+ </div>
+
+
+
+<!-- ******* -->
+<!-- GALERIA -->
+<!-- ******* -->
+ <div id="Galeria" class="galeria">
+  <div class="galeria-container">
+    <img src="img/unnamed.jpg" alt="Imagen 1" class="galeria-imagen">
+    <img src="img/unnamed2.jpg" alt="Imagen 2" class="galeria-imagen">
+    <img src="img/unnamed3.jpg" alt="Imagen 3" class="galeria-imagen">
+    <img src="img/unnamed4.jpg" alt="Imagen 4" class="galeria-imagen">
+  </div>
+</div>
+
+
+
+
+<!-- ********* -->
+<!-- UBICACION -->
+<!-- ********* -->
+<div id="ubicacion" >
+  <div class="fondo-ubicacion">
+ <div class="row row-cols-12 mapa-ubicacion">
+  <iframe
+  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13131.167231824098!2d-58.5046214!3d-34.6347011!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9f09395ab53%3A0xcb7f097df89cf413!2sClub%20Atl%C3%A9tico%20Stentor!5e0!3m2!1ses!2sar!4v1701753177619!5m2!1ses!2sar"
+  width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+ </div>
+     </div>
+     <footer>
+<p>&copy; 2024 Buffet del Club Atlético Stentor. Todos los derechos reservados.</p>
+</footer>
+</div>
+
+
+
+  <div class="whatsapp-container">
+    <a href="https://api.whatsapp.com/send?phone=69115723&text=Hola%20sean%20Bienvenidos!" target="_blank" class="whatsapp-link" rel="noreferrer">
+      <!-- Icono de WhatsApp -->
+      <i class="fab fa-whatsapp"></i> <!-- Ícono de WhatsApp -->
+
+    </a>
+    <a href="enlace-de-instagram" target="_blank" class="whatsapp-link-ig">
+      <!-- Icono de Instagram -->
+      <i class="fab fa-instagram"></i> <!-- Ícono de Instagram -->
+    </a>
+    <a href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/la-cantina-de-stentor-c09912e6-97d3-4c85-b950-17bc1c730bda-menu?search=STENTOR" target="_blank" class="whatsapp-link-py" rel="noreferrer">
+      <p>PY</p>
+    </a>
+  </div>
+
+
+
+
+    <script src="./pepe.js"></script>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
