@@ -58,10 +58,21 @@ padding: 0px 0px;
   /* box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.4); */
   transition: background-color 0.3s ease-in-out;
 }
-.navbar-brand img{
-  width: 20%;
-        
+
+
+.navbar-brand{
+  margin: 0px;
+  padding: 0px;
 }
+.navbar-brand img{
+  height: 100px;
+  padding: 8px;
+}
+
+
+
+
+
 
 img {
    /* margin-top: -60px;  */
@@ -720,13 +731,18 @@ font-size: clamp(24px, 4vw, 20px);
 
 
 
-@media (max-width: 800px) {
+@media (max-width: 990px) {
  
 
   .fondo-color-del-nav {
+    
     backdrop-filter: blur(10px) ; /* Aplica un desenfoque */
     background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con transparencia */
     transition: background-color 0.3s ease;
     padding: 0px 0px;
 }
+
+
+
+
 }
