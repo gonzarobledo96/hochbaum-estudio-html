@@ -4,6 +4,9 @@ body{
 }
 
 
+/**********************/
+/*** BOTON WHATSAPP ***/
+/**********************/
 .whatsapp-link {
   position: fixed;
   width: 50px;
@@ -29,8 +32,9 @@ body{
 }
 
 
-
-/* HEADER-NAVBAR Y FOTO PRINCIPAL */
+/**************************************/
+/*** HEADER-NAVBAR Y FOTO PRINCIPAL ***/
+/**************************************/
 /*************************/
 /*** MENU HAMBURGUESA ***/
 /***********************/
@@ -59,9 +63,6 @@ body{
 /* buscar tipografia de arquitectura */
 .diseño-texto-navbar{
 color: white;
-/* font-family: "Helvetica Neue", Helvetica, sans-serif; */
-
-/* font-weight: 300; */
 transition: 0.05s;
 letter-spacing: 2px;
 }
@@ -70,26 +71,19 @@ color: rgb(151, 109,0);
 transition: 0.5s;
 }
 .fondo-color-del-nav{
-  /* background-color: rgba(0, 0, 0, 0.5); */
-/* backdrop-filter: blur(5px);  Define el nivel de desenfoque */
 transition: background-color 0.3s ease;
 padding: 0px 0px;
 }
 .posicion-nav {
   justify-content: end;
   margin-right: 10%;
-  /* width: auto; */
 }
-
 /* Estilos del navbar con fondo blanco */
 .navbar-scroll {
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con transparencia */
-  backdrop-filter: blur(10px) ; /* Aplica un desenfoque */
-  /* box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.4); */
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px) ;
   transition: background-color 0.3s ease-in-out;
 }
-
-
 .img-navbar{
   margin: 0px;
   padding: 0px;
@@ -100,25 +94,10 @@ padding: 0px 0px;
 }
 
 
-
-
-
-
-/* img {
-   
-width: 100%;
-height: 100%;
-} */
 /*************************/
 /*** TITULO PRINCIPAL ***/
 /***********************/
 .carousel-caption {
-  /* position: absolute;
-  right: 15%;
-  bottom: 1.25rem;
-  left: 15%;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem; */
   right: 0%;
   bottom: 0em;
   left:0%;
@@ -137,65 +116,43 @@ top: 55%;
 transform: translateY(-55%);
 /* width: 100%; */
 }
-.titulo-principal{
 }
-}
-
 
 
 /*****************/
 /*** PROYECTOS ***/
 /*****************/
-/* img {
-   margin-top: -60px;  
-width: 100%;
-height: 100%;
-} */
 .miLinea {
-border-bottom: 2px solid #000; /* Puedes ajustar el grosor y el color según tus preferencias */
-width: 100%; /* O el ancho que desees */
+border-bottom: 2px solid #000; 
+width: 100%;
 }
-
-
 .titulo-con-lineas-proyectos-ubicacion {
-margin-top: 5em;
+margin: 5em 0em 1em 0em ;
 display: flex;
 align-items: center;
-/* justify-content: center; */
 width: 100%;
 }
 .titulo-con-lineas-proyectos-ubicacion h1 {
 color: white;
 margin: 0;
-padding: 0em 1em; /* Añade espacio alrededor del título si lo deseas */
+padding: 0em 1em;
 font-weight: 400;
 }
 .linea1 {
 flex: 1;
 height: 5px;
-background-color: rgb(151, 109,0); /* Puedes ajustar el color según tus preferencias */
+background-color: rgb(151, 109,0);
 }
 .linea {
 flex: 5;
 height: 5px;
-background-color: rgb(151, 109,0); /* Puedes ajustar el color según tus preferencias */
+background-color: rgb(151, 109,0);
 }
-@media (min-width: 600px) {
-.Galeria-img {
- grid-template-columns: repeat(2, 1fr);
- margin-top: 6em;
-}
-}
-@media (min-width: 800px) {
-/* .Galeria-img {
- grid-template-columns: repeat(4, 1fr);
- margin: 0 auto;} */
-}
+
 .Galeria-img {
  grid-template-columns: repeat(4, 1fr);
 display: grid;
 grid-gap: 0px;
-/* padding: 5rem 8rem 5rem 8rem; */
 padding: 5rem 0rem 5rem 0rem;
 margin: 0 auto;
 }
@@ -214,12 +171,10 @@ transition: 0.5s;
 position: relative;
 overflow: hidden;
 transition: 0.3s;
-/* border-radius: 15px; */
 }
 .Galeria-img .fila .imagenes:hover {
 box-shadow: 5px 5px 10px 5px var(--color-hover);
 transition: 0.3s;
-
 }
 .info {
 position: absolute;
@@ -229,10 +184,9 @@ font-weight: 600;
 width: 100%;
 height: 100%;
 left: 0;
-opacity: 1; /* Cambiado a 1 por defecto */
+opacity: 1;
 bottom: 0;
 transition: .5s;
-/* font-family: 'Montserrat', sans-serif; */
 }
 .info h1 {
 padding: 1em;
@@ -245,9 +199,8 @@ color: white;
 .info p {
 margin-top: 50%;
 padding-top: 90%;
-/* padding-bottom: 90%; */
 font-size: 1em;
-text-align: center; /* Centra el texto */
+text-align: center;
 letter-spacing: 5px;
 transform: rotate(-90deg);
 }
@@ -267,14 +220,12 @@ object-fit: cover;
 }
 
 
-
 /* ******* */
 /* ESTUDIO */
 /* ******* */
 .titulo-con-lineas-estudio {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   width: 100%;
   padding-top: 3em;
     padding-bottom: 3em;
@@ -282,7 +233,7 @@ object-fit: cover;
   .titulo-con-lineas-estudio h1 {
   color: white;
   margin: 0;
-  padding: 0em 1em; /* Añade espacio alrededor del título si lo deseas */
+  padding: 0em 1em;
   font-weight: 400;
   }
   .imagenes-pequeñas{
@@ -290,14 +241,11 @@ object-fit: cover;
 display: grid;
 grid-gap: 0px;
   }
-
-
  .info-imagenes-pequeñas h1{
   padding: 10px 0px;
   display: flex;
 color: rgb(151, 109,0);
 font-size: clamp(20px, 4vw, 4px); 
-/* font-size: 14px; */
 }
 .info-imagenes-pequeñas p{
   max-width: 90%;
@@ -308,84 +256,51 @@ font-size: clamp(20px, 4vw, 4px);
   display: flex;
 color: rgb(212, 212, 212);
  font-size: clamp(20px, 4vw, 4px); 
-/* font-size: 14px; */
 }
-
-
 .fondo-Seccion-estudio{
-    /* margin-top: 1em; */
 background-color: rgb(19, 19, 19) ;
     }
 .titulo-con-lineas {
-  /* margin-top: 3em; */
   padding-top: 3em;
  padding-bottom: 3em;
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   width: 100%;
 }
 .titulo-con-lineas h1 {
-/* background-color: aquamarine; */
   color: white;
   margin: 0;
-  padding: 0em 1em; /* Añade espacio alrededor del título si lo deseas */
+  padding: 0em 1em;
   font-weight: 400;
 }
 .linea1 {
   flex: 1;
   height: 5px;
-  background-color: rgb(151, 109,0); /* Puedes ajustar el color según tus preferencias */
+  background-color: rgb(151, 109,0); 
 }
 .linea {
   flex: 5;
   height: 5px;
-  background-color: rgb(151, 109,0); /* Puedes ajustar el color según tus preferencias */
+  background-color: rgb(151, 109,0); 
 }
-
 
 
 /*****************/
 /*** UBICACION ***/
 /*****************/
-.titulo-con-lineas-proyectos-ubicacion {
-   margin-top: 5em;
-  display: flex;
-  align-items: center;
-  /* justify-content: center; */
-  width: 100%;
-}
-.titulo-con-lineas-proyectos-ubicacion h1 {
-  color: white;
-  margin: 0;
-  padding: 0em 1em; /* Añade espacio alrededor del título si lo deseas */
-  font-weight: 400;
-}
-.linea1 {
-  flex: 1;
-  height: 5px;
-  background-color: rgb(151, 109,0); /* Puedes ajustar el color según tus preferencias */
-}
-.linea {
-  flex: 5;
-  height: 5px;
-  background-color: rgb(151, 109,0); /* Puedes ajustar el color según tus preferencias */
-}
-.fondo-ubicacion {
-    padding: 3em 5em 3em 5em;
-}
+/* Linea1 y linea 2 - titulo-con-lineas-proyectos-ubicacion */
+
+
 /*******************/
 /*** MAPA GOOGLE ***/
 /*******************/
 .fondo-ubicacion {
-  padding: 0em 3em 3em 3em;
+  padding: 0em 1em 3em 1em;
 }
 .mapa-ubicacion iframe{
-  
   width: 100%;
 height: 284px;
 }
-
 
 
 /**************/
@@ -438,8 +353,7 @@ font-size: clamp(24px, 4vw, 20px);
   width:40px;
   height:40px;
   line-height:40px;
-  margin-left:6px;
-  margin-right:0;
+  margin: 0px 3px;
   border-radius:100%;
   background-color:#33353d
 }
@@ -449,20 +363,12 @@ font-size: clamp(24px, 4vw, 20px);
 }
 @media (max-width:991px)
 {
-  .site-footer [class^=col-]
-  {
-    margin-bottom:30px
-  }
 }
 @media (max-width:767px)
 {
   .site-footer
   {
     padding-bottom:0
-  }
-  .site-footer .copyright-text,.site-footer .social-icons
-  {
-    text-align:left;
   }
 }
 .social-icons
@@ -542,20 +448,13 @@ font-size: clamp(24px, 4vw, 20px);
 /******************/
 /*** PROYECTO 1 ***/
 /******************/
-/* #parrafo-oculto {
-  display: none; 
-} */
 /* Estilo para las pestañas */
 .imagenes-proyecto{
   margin-top: 10em;
 }
 .img-thumbnail {
-  /* padding: .25rem; */
   padding: 0rem;
-  /* background-color: #fff; */
-  /* border: 1px solid var(--bs-border-color); */
   border: none;
-   /* border-radius: .375rem;  */
   border-radius: 10px;
   max-width: 100%;
   height: 100%;
@@ -565,19 +464,37 @@ font-size: clamp(24px, 4vw, 20px);
   filter: brightness(50%);
   transition: 0.5s;
 }
-.info-casa-1 h4, h3, p  {
-  color: white;
-  padding: 0px 50px ;
+.info-casa-1{
+  color: rgb(228, 228, 228);
+   padding: 0em 1em; 
+}
+.informacion-1{
+  padding-bottom: 1em;
+  border-bottom: solid 2px rgb(151, 109,0);
+}
+.informacion-2{
+  padding: 1.5em 0em 0.5em 0em;
+}
+.Conoce-mas-sobre-esta-propiedad{
+  padding: 1em 0em 0.5em 0em;
+  border-top: solid 2px rgb(151, 109,0);
+  color: rgb(228, 228, 228);
+}
+.caracteristicas-generalesYambientes p{
+color: rgb(228, 228, 228);
 }
 .parrafo-proyecto1{
-  padding: 0em 1em;
-  color: white;
+  font-size: 18px;
+  padding: 1em 1em;
+  color: rgb(228, 228, 228);
 }
 .button{
   border: none;
-  background-color: white;
+  background-color: rgb(228, 228, 228);
   font-weight: 600;
 }
+
+
 /***************/
 /*** GALERIA ***/
 /***************/
@@ -587,12 +504,10 @@ font-size: clamp(24px, 4vw, 20px);
   grid-template-areas:
     "imagen pequenas";
     gap: 10px;
-    padding: 50px;
-    
+    padding: 10px; 
 }
 .imagen-principal {
   grid-area: imagen;
-  
 }
 .imagenes-pequenas {
   grid-area: pequenas;
@@ -606,7 +521,6 @@ font-size: clamp(24px, 4vw, 20px);
 }
 
 
-
 /*************/
 /*** logos ***/
 /*************/
@@ -618,9 +532,8 @@ font-size: clamp(24px, 4vw, 20px);
     justify-content: center;
     align-items: center;
     gap: 24px;
-    padding: 2em 3em 2em 3em;
-    /* padding: 0; */
-    /* overflow: hidden; */
+    padding: 2em 2em 2em 2em;
+    margin: 0em 1em;
 }
 .Logos li{
   list-style-type: none;
@@ -630,25 +543,24 @@ font-size: clamp(24px, 4vw, 20px);
     gap: 8px;
     margin-right: 0;
     padding: 8px 10px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
-    /* white-space: nowrap; */
+    color: rgb(228, 228, 228);
+    white-space: nowrap; /* suprime saltos de linea de espacios en blanco. */
 }
 .boton-mostrar-parrafo{
   background-color: #000;
-  color: white;
-  padding: 0px 50px;
+  color: rgb(228, 228, 228);
+ 
 }
-
 .Características{
-  color: white;
-  padding: 20px 50px;
-  /* background-color: #00aced; */ 
+  font-size: 18px;
+  color: rgb(228, 228, 228);
+  padding: 20px 0px;
 }
 .ambientes{
-  color: white;
+  color: rgb(228, 228, 228);
   padding: 20px;
-  /* background-color: #33353d; */
 }
 #ambientes-tab {
   color: inherit; 
@@ -668,20 +580,15 @@ font-size: clamp(24px, 4vw, 20px);
   border-radius: 10px 10px 0px 0px;
   border-bottom: 3px solid rgb(151, 109,0);
   background-color: rgb(22, 22, 22);
-  
   padding: 10px;
   transition: 0.3s;
-  
 }
 .nav-tabs {
-  border-bottom: none; /* Elimina el borde inferior de los elementos de la lista */
+  border-bottom: none;
 }
 .modal-title{
   color: blue;
 }
-
-
-
 
 
 /* MEDIA CUIRE */
@@ -717,8 +624,8 @@ font-size: clamp(24px, 4vw, 20px);
 }
 @media (max-width: 990px) {
   .fondo-color-del-nav {
-    backdrop-filter: blur(10px) ; /* Aplica un desenfoque */
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con transparencia */
+    backdrop-filter: blur(10px) ; 
+    background-color: rgba(0, 0, 0, 0.5);
     transition: background-color 0.3s ease;
     padding: 0px 0px;
 }
@@ -727,7 +634,9 @@ font-size: clamp(24px, 4vw, 20px);
 
 /* MEDIA CUIRE DEL 320 AL 480 */
 @media screen and (min-width:320px) and (max-width: 480px){
-
+/**************/
+/*** NAVBAR ***/
+/**************/
   .img-navbar img {
     height: 70px;
     padding: 0px 8px;
@@ -741,8 +650,6 @@ font-size: clamp(24px, 4vw, 20px);
   .titulo-con-lineas h1 {
     font-size: 1em;
     }
-
-
 /*****************/
 /*** PROYECTOS ***/
 /*****************/
@@ -772,7 +679,6 @@ font-size: clamp(24px, 4vw, 20px);
     .info p {
     font-size: 10px;
     }
-
 /* ESTUDIO */
 .titulo-con-lineas-estudio{
     padding-top: 3em;
@@ -793,22 +699,39 @@ grid-gap: 0px;
  padding: 8px 12px;
   margin-top: var(--bs-gutter-y);
 }  
-
 .info-imagenes-pequeñas{
   grid-template-columns: repeat(1, 1fr);
 display: grid;
 grid-gap: 0px;
 } 
-
-
-/* footer */
- .site-footer .social-icons {
-  text-align: center;
-} 
-
-
-
-
+/*************/
+/*** FOTER ***/
+/*************/
+.site-footer h6 {
+  display: flex;
+  justify-content: center;
 }
 
 
+/******************/
+/*** PROYECTO-1 ***/
+/******************/
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-areas: "imagen pequenas";
+  gap: 10px;
+  padding: 10px;
+}
+.Logos {
+  border-top: 1px solid rgb(151, 109, 0);
+  border-bottom: 1px solid rgb(151, 109, 0);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 2em 2em 2em 2em;
+  margin: 0em 1em;
+}
+}
