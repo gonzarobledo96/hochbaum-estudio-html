@@ -606,8 +606,9 @@ color: rgb(228, 228, 228);
 /* MEDIA CUIRE */
 @media screen and (min-width:320px) and (max-width: 340px){
   .info p {
-    /* margin-top: 70%;
-    padding-top: 85%; */
+    font-size: 10px;
+    margin-top: 60%;
+    padding-top: 85%;
     }
 }
 @media screen and (min-width:340px) and (max-width: 370px){
@@ -806,7 +807,7 @@ font-size: 1.5em;
   padding-bottom: 3em; 
 }
 .titulo-con-lineas-estudio h1{
-font-size: 1em;
+font-size: 1.5em;
 }
 .imagenes-pequeñas{ 
 grid-template-columns: repeat(2, 1fr);
@@ -907,13 +908,16 @@ font-size: 1.5em;
     margin-top: 8%;
     padding-top: 85%;
     }
+/***********/
 /* ESTUDIO */
+/***********/
+
 .titulo-con-lineas-estudio{
   padding-top: 3em;
   padding-bottom: 3em; 
 }
 .titulo-con-lineas-estudio h1{
-font-size: 1em;
+font-size: 1.5em;
 }
 .imagenes-pequeñas{ 
 grid-template-columns: repeat(2, 1fr);
@@ -1002,7 +1006,7 @@ font-size: 1.5em;
     padding-bottom: 3em; 
   }
   .titulo-con-lineas-estudio h1{
-  font-size: 1em;
+  font-size: 2em;
   }
   .imagenes-pequeñas{ 
   grid-template-columns: repeat(2, 1fr);
@@ -1077,9 +1081,9 @@ font-size: 1.5em;
         padding-top: 3em;
         padding-bottom: 3em; 
       }
-      .titulo-con-lineas-estudio h1{
-      font-size: 1em;
-      }
+      .titulo-con-lineas-estudio h1 {
+        font-size: 2em;
+    }
       .imagenes-pequeñas{ 
       grid-template-columns: repeat(2, 1fr);
       display: grid;
