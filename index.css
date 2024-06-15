@@ -452,6 +452,30 @@ font-size: clamp(24px, 4vw, 20px);
 /******************/
 /*** PROYECTO 1 ***/
 /******************/
+/***************/
+/*** GALERIA ***/
+/***************/
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-areas:
+    "imagen pequenas";
+    gap: 10px;
+    padding: 10px; 
+}
+.imagen-principal {
+  grid-area: imagen;
+}
+.imagenes-pequenas {
+  grid-area: pequenas;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.imagenes-pequenas img {
+  width: 100%;
+  /* height:auto; */
+}
 /* Estilo para las pestañas */
 .imagenes-proyecto{
   margin-top: 10em;
@@ -497,37 +521,7 @@ color: rgb(228, 228, 228);
   background-color: rgb(228, 228, 228);
   font-weight: 600;
 }
-
-
-/***************/
-/*** GALERIA ***/
-/***************/
-.grid-container {
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-  grid-template-areas:
-    "imagen pequenas";
-    gap: 10px;
-    padding: 10px; 
-}
-.imagen-principal {
-  grid-area: imagen;
-}
-.imagenes-pequenas {
-  grid-area: pequenas;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-.imagenes-pequenas img {
-  width: 100%;
-  /* height:auto; */
-}
-
-
-/*************/
 /*** logos ***/
-/*************/
 .Logos{
   border-top: 1px solid rgb(151, 109,0);
     border-bottom: 1px solid rgb(151, 109,0);
@@ -598,9 +592,15 @@ color: rgb(228, 228, 228);
 .nav-tabs {
   border-bottom: none;
 }
-.modal-title{
+/* .modal-title{
   color: blue;
-}
+} */
+
+
+
+
+
+
 
 
 /* MEDIA CUIRE */
@@ -747,8 +747,11 @@ grid-gap: 0px;
   grid-template-columns: repeat(2, 1fr);
   margin: 0em 1em;
 }
+.ambientes{
+  color: rgb(228, 228, 228);
+  padding: 20px 20px 20px 0px;
 }
-
+}
 
 
 
@@ -855,11 +858,14 @@ justify-content: center;
 grid-template-columns: repeat(2, 1fr);
 margin: 0em 1em;
 }
+/* .ambientes{
+  color: rgb(228, 228, 228);
+  padding: 20px 20px 20px 0px;
+} */
 }
 
 
   
-
 @media screen and (min-width: 576px) and (max-width: 768px ){
 /**************/
 /*** NAVBAR ***/
@@ -911,7 +917,6 @@ font-size: 1.5em;
 /***********/
 /* ESTUDIO */
 /***********/
-
 .titulo-con-lineas-estudio{
   padding-top: 3em;
   padding-bottom: 3em; 
@@ -965,6 +970,10 @@ justify-content: center;
 grid-template-columns: repeat(2, 1fr);
 margin: 0em 1em;
 }
+/* .ambientes{
+  color: rgb(228, 228, 228);
+  padding: 20px 20px 20px 0px;
+} */
 }
 
 

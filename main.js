@@ -19,8 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
   
-
-
 //  GALERIA DE IMAGENES
   $(document).ready(function() {
     // Al hacer clic en una miniatura o en la imagen grande, abrir el modal y mostrar la imagen correspondiente
@@ -42,8 +40,6 @@ document.addEventListener('DOMContentLoaded', function() {
         $('#counter').text('Imagen ' + (currentIndex + 1) + ' de ' + totalItems);
     }
 });
-
-
 
 
 
