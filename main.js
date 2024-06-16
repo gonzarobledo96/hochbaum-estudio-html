@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function updateCounter() {
         var currentIndex = $('#carouselExampleIndicators .active').index();
         var totalItems = $('.carousel-item').length - 1; // Restamos 1 para contar solo las imágenes, no la de índice 0
-        $('#counter').text('Imagen ' + (currentIndex + 1) + ' de ' + totalItems);
+        $('#counter').text(' ' + (currentIndex + 1) + ' / ' + totalItems);
     }
 });
 
