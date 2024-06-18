@@ -693,7 +693,7 @@ color: rgb(228, 228, 228);
 .carousel-control-prev, .carousel-control-next {
   position: absolute;
   /* top: 50%; */
-  top: 30%;
+  top: 50%;
   transform: translateY(-50%);
   width: 50px;
   height: 50px;
@@ -757,7 +757,7 @@ color: rgb(228, 228, 228);
     padding-top: 85%;
     }
 /* proyecto */
-.carousel-control-next{
+/* .carousel-control-next{
    top: 40%; 
    width: 40px;
   height: 40px; 
@@ -777,7 +777,7 @@ color: rgb(228, 228, 228);
 }
      .carousel-control-prev, .carousel-control-next {
       background-color: rgba(0, 0, 0, 0.397);  
-  } 
+  }  */
 }
 @media screen and (min-width:340px) and (max-width: 370px){
   .info p {
@@ -786,7 +786,7 @@ color: rgb(228, 228, 228);
     padding-top: 85%;
     }
     /* proyecto */
-    .carousel-control-next{
+    /* .carousel-control-next{
       top: 40%; 
       width: 40px;
      height: 40px; 
@@ -806,7 +806,7 @@ color: rgb(228, 228, 228);
    }
     .carousel-control-prev, .carousel-control-next {
       background-color: rgba(0, 0, 0, 0.397);  
-  } 
+  }  */
 }
 @media screen and (min-width:370px) and (max-width: 420px){
   .info p {
@@ -815,7 +815,7 @@ color: rgb(228, 228, 228);
     padding-top: 85%;
     }
     /* proyecto */
-    .carousel-control-next{
+    /* .carousel-control-next{
       top: 45%; 
       width: 40px;
      height: 40px; 
@@ -835,7 +835,7 @@ color: rgb(228, 228, 228);
    }
      .carousel-control-prev, .carousel-control-next {
       background-color: rgba(0, 0, 0, 0.397);  
-  } 
+  }  */
 }
 @media screen and (min-width:420px) and (max-width: 450px){
   .info p {
@@ -963,9 +963,9 @@ grid-gap: 0px;
   color: rgb(228, 228, 228);
   padding: 20px 20px 20px 0px;
 }
-.carousel-control-prev, .carousel-control-next {
+/* .carousel-control-prev, .carousel-control-next {
   background-color: rgba(0, 0, 0, 0.397);  
-}
+} */
 }
 
 
@@ -1073,9 +1073,9 @@ justify-content: center;
 grid-template-columns: repeat(2, 1fr);
 margin: 0em 1em;
 }
-.carousel-control-prev, .carousel-control-next {
+/* .carousel-control-prev, .carousel-control-next {
   background-color: rgba(0, 0, 0, 0.397);  
-}
+} */
 }
 
 
@@ -1176,9 +1176,9 @@ justify-content: center;
 grid-template-columns: repeat(2, 1fr);
 margin: 0em 1em;
 }
-.carousel-control-prev, .carousel-control-next {
+/* .carousel-control-prev, .carousel-control-next {
   background-color: rgba(0, 0, 0, 0.397);  
-}
+} */
 }
 
 
