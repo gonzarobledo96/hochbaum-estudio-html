@@ -668,6 +668,9 @@ color: rgb(228, 228, 228);
 
 
 
+ /* .carousel-inner .carousel-item {
+  transition: transform 0.1s ease; 
+}  */
 
 
 .carousel-control-next, .carousel-control-prev {
@@ -687,6 +690,7 @@ color: rgb(228, 228, 228);
    opacity: 1;
   /* opacity: .5; */
   /* transition: opacity .15s ease; */
+  
   }
 
 
@@ -698,13 +702,14 @@ color: rgb(228, 228, 228);
   width: 50px;
   height: 50px;
     /* background-color: rgba(0, 0, 0, 0.5);   */
-    background-color: rgb(0, 0, 0);  
+    background-color: rgba(0, 0, 0, 0.603);  
   transition: 0.3s;
 }
 
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
   background-size: 100%, 100%;
+  
   
   /* background-color: red;  */
 }

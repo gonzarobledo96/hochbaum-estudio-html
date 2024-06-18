@@ -1,3 +1,4 @@
+
 // PARRAFO OCULTO
 document.addEventListener('DOMContentLoaded', function() {
   const mostrarParrafoBtn = document.getElementById('mostrar-parrafo');
@@ -40,6 +41,31 @@ document.addEventListener('DOMContentLoaded', function() {
         $('#counter').text(' ' + (currentIndex + 1) + ' / ' + totalItems);
     }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
