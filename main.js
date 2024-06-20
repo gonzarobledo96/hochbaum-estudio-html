@@ -19,53 +19,30 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-  
-//  GALERIA DE IMAGENES
-  $(document).ready(function() {
-    // Al hacer clic en una miniatura o en la imagen grande, abrir el modal y mostrar la imagen correspondiente
-    $('.img-thumbnail').click(function() {
-        var index = $(this).data('slide-to');
-        $('#carouselExampleIndicators').carousel(index);
-        updateCounter(); // Actualizar el contador
-    });
 
-    // Actualizar el contador cuando se cambie de imagen en el carrusel
-    $('#carouselExampleIndicators').on('slid.bs.carousel', function() {
-        updateCounter(); // Llamada a la función de actualización del contador cada vez que cambia la imagen
-    });
+document.addEventListener('DOMContentLoaded', function() {
+  baguetteBox.run('.compact-gallery', {
+      animation: 'slideIn'
+  });
 
-    // Función para actualizar el contador de imágenes
-    function updateCounter() {
-        var currentIndex = $('#carouselExampleIndicators .active').index();
-        var totalItems = $('.carousel-item').length - 1; // Restamos 1 para contar solo las imágenes, no la de índice 0
-        $('#counter').text(' ' + (currentIndex + 1) + ' / ' + totalItems);
-    }
+  // Modificar el título y eliminar la numeración
+  var gallery = document.querySelector('.compact-gallery');
+  var overlay = gallery.querySelector('.baguetteBox-overlay');
+
+  if (overlay) {
+      // Modificar el título
+      var titleElement = overlay.querySelector('.baguetteBox-title');
+      if (titleElement) {
+          titleElement.textContent = 'Título personalizado';  // Cambiar por el título deseado
+      }
+
+      // Eliminar la numeración (opcional)
+      var overlayBottomBar = overlay.querySelector('.baguetteBox-bottomBar');
+      if (overlayBottomBar) {
+          overlayBottomBar.style.display = 'none';  // Ocultar la barra inferior que contiene la numeración
+      }
+  }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
