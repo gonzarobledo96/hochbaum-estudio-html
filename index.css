@@ -1,4 +1,3 @@
-
 body{
   /* font-family: "Helvetica Neue", Helvetica, sans-serif; */
   font-family: "Poppins", sans-serif;
@@ -682,41 +681,6 @@ strong{
       width: 100%;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* MEDIA CUIRE */
 @media screen and (min-width:320px) and (max-width: 340px){
   .info p {
@@ -731,7 +695,6 @@ strong{
     margin-top: 60%;
     padding-top: 85%;
     }
-   
 }
 @media screen and (min-width:370px) and (max-width: 420px){
   .info p {
@@ -762,9 +725,6 @@ strong{
     padding: 0px 0px;
 }
 }
-
-
-
 
 
 /* MEDIA CUIRE DEL 320 AL 480 */
@@ -877,7 +837,6 @@ grid-gap: 0px;
   padding: 0em;
 }
 }
-
 
 
 /* MEDIA CUIRE DEL 480 AL 576 */
@@ -993,7 +952,6 @@ margin: 0em 1em;
 }
 
 
-  
 @media screen and (min-width: 576px) and (max-width: 768px ){
 /**************/
 /*** NAVBAR ***/
@@ -1095,7 +1053,6 @@ margin: 0em 1em;
   background-color: rgba(0, 0, 0, 0.397);  
 } */
 }
-
 
 
 @media screen and (min-width: 768px) and (max-width: 930px){
@@ -1264,4 +1221,3 @@ font-size: 1.5em;
       margin: 0em 1em;
       }
 }
-
